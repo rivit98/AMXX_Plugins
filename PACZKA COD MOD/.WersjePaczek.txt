@@ -1,0 +1,9 @@
+ID 1 --->   CoD | klasy i staty i perki
+ID 2 --->   CoD | klasy i staty i 2 perki
+ID 3 --->   CoD bez statow | klasy i perki
+ID 4 --->   CoD bez statow | klasy i 2 perki
+ID 5 --->   CoD bez klas | staty i perki
+ID 6 --->   CoD bez klas | staty i 2 perki
+ID 7 --->   CoD bez klas i statow | perki
+ID 8 --->   CoD bez klas i statow | 2 perki
+ID 9 --->   CoD bez klas i perkow | staty

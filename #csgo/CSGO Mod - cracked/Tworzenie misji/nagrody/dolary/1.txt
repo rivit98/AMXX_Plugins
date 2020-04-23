@@ -1,0 +1,4 @@
+#include <cstrike>
+
+//Dolary
+#define NAGRODA_DOLARY 3000 //Ile dolarow ma dostac jako nagrode

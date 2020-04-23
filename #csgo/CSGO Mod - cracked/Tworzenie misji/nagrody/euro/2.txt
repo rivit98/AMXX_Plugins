@@ -1,0 +1,3 @@
+
+		//EURO
+		csgo_set_user_euro(id, csgo_get_user_euro(id) + NAGRODA_EURO);

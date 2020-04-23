@@ -1,0 +1,26 @@
+1.0.0
+	- wydanie pluginu
+
+1.0.0a
+	- ustawiono automatyczne wlaczenie HUD przy pierwszym wejsciu na serwer
+	- poprawiono prefix
+
+1.0.0b
+	- dodano mozliwosc logowania zmian u graczy w skrzynkach/skinach/kluczach pod cvarem
+	- wyodrebniono HUD do osobnego pluginu
+	- zoptymalizowano podnoszenie broni pod E
+	- poprawiono dzialanie MVP
+
+1.0.1
+	- dodano plugin z kontami jako wymagany
+	- dodano mozliwosc ustawiania dla skinow rowniez modelu p_*
+	- zmieniono wymogi na zdobywanie rang
+	- dodano natywy wskazujace na indexy otwartych plikow nVault
+	- poprawiono natyw csgo_get_user_deaths
+	- zmieniono wyglad menu misji
+	- poprawiono wyœwietlanie misji
+	- dodano instrukcje do instalacji moda
+	- dodano dok³adny opis moda
+	- zmieniono dzia³anie logów
+	- dodano cene klucza do menu
+	- usunieto reklamy d0naciak.pl (teraz tylko d0naciak)

@@ -1,0 +1,3 @@
+
+//Euro
+#define NAGRODA_EURO 800	//Ile Euro ma dostac za zrobienie misji (100 -> 1.00 Euro)

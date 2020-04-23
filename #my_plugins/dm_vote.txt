@@ -1,0 +1,19 @@
+[en]
+VOTE_STARTS_IN = The vote will start in %d seconds!
+VOTE_STARTING = Starting vote...
+VOTE_FINISHS_IN = The vote will end in %d seconds!
+VOTE_FINISH = !yVote ended. OnlyHead mode !g(%d%%) !y- Normal mode !g(%d%%) !y- awp mode !g(%d%%)
+VOTE_RESULT = !yDeathMatch will be !team%s.
+VOTE_NOWINNER = !yThe vote has not winner. DeathMatch will be !teamNormal mode.
+VOTE_MENU_TITLE = \r[Vote Menu] \yWhich type of DeatMatch you would like to play?
+VOTE_HAS_CHOOSEN = !team%s !yhas choosen !team%s mode
+
+[pl]
+VOTE_STARTS_IN = The vote will start in %d seconds!
+VOTE_STARTING = Starting vote...
+VOTE_FINISHS_IN = The vote will end in %d seconds!
+VOTE_FINISH = !yVote ended. OnlyHead mode !g(%d%%) !y- Normal mode !g(%d%%) !y- awp mode !g(%d%%)
+VOTE_RESULT = !yDeathMatch will be !team%s.
+VOTE_NOWINNER = !yThe vote has not winner. DeathMatch will be !teamNormal mode.
+VOTE_MENU_TITLE = \r[Vote Menu] \yWhich type of DeatMatch you would like to play?
+VOTE_HAS_CHOOSEN = !team%s !yhas choosen !team%s mode

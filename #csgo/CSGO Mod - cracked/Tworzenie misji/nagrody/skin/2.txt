@@ -1,0 +1,4 @@
+
+		//SKINY
+		new iSkin = csgo_get_skin_by_name(INDEX_BRONI, NAZWA_SKINA);
+		csgo_set_user_skins(id, INDEX_BRONI, iSkin, csgo_get_user_skins(id, INDEX_BRONI, iSkin) + ILOSC_SKINOW);

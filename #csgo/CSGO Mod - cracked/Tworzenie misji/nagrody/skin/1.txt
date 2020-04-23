@@ -1,0 +1,5 @@
+
+//SKINY
+#define NAZWA_SKINA "ZBL"		//Nazwa skina do dodania
+#define INDEX_BRONI CSW_AWP		//CSW ID broni, do ktorej jest skin
+#define ILOSC_SKINOW 1			//Ilosc skinow

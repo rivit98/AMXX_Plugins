@@ -1,0 +1,59 @@
+Paczka CS:GO Mod by d0naciak.pl jest symulatorem gry Counter-Strike: Global Offensive na serwer Counter-Strike 1.6. Wszystko bazuje oczywiœcie na znanym dodatku Amx Mod X (AMXX).
+
+Wymagania
+Do w pe³ni poprawnego dzia³ania CS:GO Moda wymaga siê u¿ywania automatycznego FastDL!
+
+Instalacja
+Skopiuj paczkê na swój serwer
+Skonfiguruj pliki w folderze addons/amxmodx/configs/csgo_donaciak
+Ciesz siê zainstalowanym CS:GO Modem!
+
+Zawartoœæ paczki:
+Euro - specjalna waluta, przyznawana graczom za wykonywanie misji b¹dŸ zdobywanie nagrody najbardziej wartoœciowego zawodnika mapy - znanej równie¿ jako nagroda MVP.
+Rangi - ka¿dy gracz posiada swoj¹ rangê, która okreœla poziom gry jaki on reprezentuje. Rangi przydzielane s¹ w oparciu o zdobyte fragi, a tak¿e ich stosunek do œmierci (k/d). Im lepsze statystyki, tym wy¿sza ranga
+Skiny - specjalne skórki broni, które gracz mo¿e znaleŸæ w skrzynkach. Urozmaicaj¹ one rozgrywkê, gdy¿ gracz mo¿e wyró¿niæ siê od reszty dziêki tym skinom.
+Skrzynki - losowane pod koniec ka¿dej mapy. Ka¿da skrzynka zawiera odpowiedni zestaw skinów. Skrzynki mo¿na otworzyæ przy pomocy kluczy do skrzynek.
+Klucz do skrzynki - Klucze s¹ potrzebne do otwierania skrzynek. Klucz mo¿na kupiæ za Euro, poprzez menu g³ówne, oraz czasem mozna go zdobyc zabijajac przeciwnikow.
+Misje - wykonywanie ich daje graczowi bonusy w postaci chocia¿by Euro, ale te¿ skinów, skrzynek czy kluczy.
+Konta - mozliwosc rezerwacji nicku haslem, dzieki czemu nie ma wlamow, kradziezy skinow itd.
+
+VIP & SVIP:
+Umieszczone w paczce pluginy VIP'a i SVIP'a s¹ tylko dodatkami do normalnego VIP'a czy Super VIP'a! Zawieraj¹ one bonusy zwi¹zane tylko z CS:GO Modem, oto lista tych dodatków:
+zwiekszona szansa na trafienie klucza przy zabojstwie
+zwiekszona szansa na trafienie skrzynki przy zabojstwie
+zmniejszona cena za kupno klucza
+zwiekszona szansa na trafienie skrzynki w losowaniu
+Wszystkie wy¿ej wymienione bonusy s¹ mo¿liwe do ustawienia w cvarach (addons/amxmodx/configs/csgo_donaciak/csgo.cfg). W cvarach mo¿liwe jest tak¿e ustawienie flag dostêpu.
+
+Inne dodatki do modyfikacji:
+Wymiana - mo¿liwoœæ handlowania przedmiotami miêdzy graczami
+Menu - g³ówne menu, dziêki któremu mo¿na dostaæ siê do ka¿dej opcji moda
+Zarz¹dzalne HUD - mo¿liwoœæ w³./wy³. dziêki komendzie
+Podnoszenie broni jak w CS:GO - wystarczy podejœæ na odpowiedni¹ odleg³oœæ do le¿¹cej broni, nacelowaæ na ni¹ i klikn¹æ E, a broñ zostanie podniesiona
+Pe³ne magazynki jak w CS:GO - przy zakupie broni otrzymujemy do niej tak¿e pe³en magazynek
+MVP - przyznawana co rundê nagroda dla najbardziej wartoœciowego gracza. Pod koniec mapy gracz z najwiêksz¹ iloœci¹ nagród zostaje nagrodzony w postaci Euro.
+
+Komendy:
+say /menu - otwiera g³ówne menu
+say /skiny - otwiera menu skinów	
+say /mojeskiny - otwiera liste twoich skinów
+say /listaskinow - otwiera menu w której mozna podgl¹dn¹æ wszystkie skiny
+say /skrzynki, say /klucze - otwiera g³ówne menu dla skrzynek i kluczy
+say /mojeskrzynki - otwiera lista twoich skrzynek
+say /listaskrzynek - otwiera liste ze wszystkimi skrzynkami
+say /kupklucz - kupuje klucz do skrzynek
+say /misje - otwiera liste misji dostepnych dla gracza
+say /listarang - otwiera liste rang
+say /wymien - otwiera menu wymiany
+say /hud - wlacza/wylacza HUD
+say /konto - otwiera menu zarzadzania kontem
+say /pomoc - otwiera pomoc
+say /komendy - otwiera liste komend CS:GO
+
+Komendy admina (tylko dla adminow z immunitetem!):
+say /csgoadmin - menu admina
+csgo_addskins <nick> <CSWID broni> <nazwa_skina> <ilosc> - dodaje skiny graczowi
+csgo_addcrates <nick> <nazwa_skrzynki> <ilosc> - dodaje skrzynki graczowi
+csgo_addkeys <nick> <ilosc> - dodaje klucze graczowi
+csgo_addeuro <nick> <ilosc> - dodaje Euro graczowi
+

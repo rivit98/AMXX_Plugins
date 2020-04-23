@@ -1,0 +1,76 @@
+version:
++klasy
++staty
++1 slot perk
+
+Normalna paczka CoD.
+___________________________ ZAWARTOSC PACZKI ___________________________
+
+-/silnik CoD/
+pod 201 - 601 lvl
+procentowe pokazywanie expa;
+szybkie rozdawanie statystyk;
+nowa statystyka: obrażenia;
+nowa statystyka: exp;
+nowa statystyka: reload;
+nowa statystyka: kevlar;
+nowa statystyka: ekonomia;
+nowa statystyka: kamuflaz;
+nowa statystyka: krytyk;
+nowa statystyka: unik;
+rozwiązany problem z CurWeapon (zastosowanie innej metody);
+dodana komenda na wyłaczanie/właczanie hud;
+exp za headshot w silniku (cvar);
+łatka 0 hp bug;
+exp za podłożenie, rozbrojenie, uratowanie hostów w silniku (cvar);
+exp za podniesienie/wyrzucenie paki (cvar) (zaleca się aby exp za podniesienie był mniejszy niż za upuszczenie, bo gracze wyrzucają i podnoszą) (#define do wyłaczania tej opcji);
+kasa za wyrzucenie (sprzedanie) perku. Komenda /sell, /drop;
+frakcje przy rejestracji klasy;
+zablokowane kupowanie;
+bonusy dla gracza premium i super premium zintegrowane z silnikiem
+system renderingu! nigdy więcej problemów z niewidzialnością
+pozbawiony zbędnych funkcji
+poprawne ustawianie prędkości
+
+-/czysciciel/
+usuwa miny, apteczki, rakiety, dzialka na poczatku rundy;
+usunieta dzieki temu kupa kodu z klas i perkow, ktory sie powtarzal :D;
+
+-/menu admina/
+-/klany/
+-/klasy zwykle, premium, super premium/
+-/~110 perkow/
+-/exp o godzinach/
+
+-/wytrzymalosc perku/
+naprawiony bug (po zmianie klasy odnawiala sie wytrzymalosc);
+
+-/misje (questy)/
+mozliwosc wylaczenia hud;
+mozliwosc przerwania misji;
+zapis postepu misji na nastepna mape;
+specjane rozdzialy;
+misje niezależne od poziomu!
+
+-/sklep do CoD/
+pod komenda /sklep, /shop;
+osobny dla premium i super premium tzw. 3 w 1;
+
+-/modele/
+podmienione modele broni na bardziej CoD'owe;
+gracz ma możliwość wyłączenia/włączenia nowych modeli;
+dodano 4 paczki modeli (patrz folder configs/ghw);
+
+-/bonusowe paczki/
+zmieniony model ogromnej paczki na sakiewke (szybciej sie sciagnie i lepiej wyglada niz ogromna paczka);
+
+-/aukcje/
+wystawianie/kupowanie/wycofywanie perkow na aukcjach;
+pisane od podstaw przeze mnie;
+
+___________________________ INNE INFO ___________________________
+Paczka zawiera TYLKO CoD MoD + dodatki do niego. Nie ma np. licznik C4, map itp. itd.
+Wymagany Amx Mod X 1.8.3 (jest w paczce), wersja HLDS 6k+!
+Wymagana kompilacja lokalna! (dołączony kompilator (+wszystkie wymagane .inc) w wersji kompatybilnej z AMXX z paczki)
+Paczka testowana!
+W folderze configs jest rozpiska flag do premium.

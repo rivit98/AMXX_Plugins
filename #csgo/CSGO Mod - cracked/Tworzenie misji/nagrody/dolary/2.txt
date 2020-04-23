@@ -1,0 +1,3 @@
+
+		//DOLARY
+		cs_set_user_money(id, cs_get_user_money(id) + NAGRODA_DOLARY);

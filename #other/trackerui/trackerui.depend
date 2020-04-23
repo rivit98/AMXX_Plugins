@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1526474044 source:d:\dysk google\cpp_programs\trackerui\main.cpp
+	"main.h"
+	"Util.h"
+	"config.h"
+	<string>
+	<iostream>
+	<cstdio>
+	<fstream>
+	<tchar.h>
+
+1526469142 d:\dysk google\cpp_programs\trackerui\main.h
+	<windows.h>
+	"NetSock.h"
+
+1526464281 d:\dysk google\cpp_programs\trackerui\util.h
+	<string>
+	"NetSock.h"
+
+1526744136 source:d:\dysk google\cpp_programs\trackerui\util.cpp
+	"Util.h"
+	<fstream>
+
+1526456553 source:d:\dysk google\cpp_programs\trackerui\netsock.cpp
+	<windows.h>
+	<winsock.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/un.h>
+	<resolv.h>
+	<arpa/inet.h>
+	<netdb.h>
+	<unistd.h>
+	<fcntl.h>
+	<errno.h>
+	<cstdlib>
+	<stdint.h>
+	"NetSock.h"
+
+1507003414 d:\dysk google\cpp_programs\trackerui\netsock.h
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/un.h>
+	<windows.h>
+	<winsock.h>
+	<cstdio>
+
+1526753211 d:\dysk google\cpp_programs\trackerui\config.h
+

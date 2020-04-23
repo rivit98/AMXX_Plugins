@@ -1,0 +1,1366 @@
+#pragma semicolon 1
+#pragma ctrlchar '\'
+
+
+func_00()
+{
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "func_00"
+func_00()
+
+func_01()
+{
+    new var1;
+    new var2;
+    new var3;
+    new var4;
+    new var5;
+    new var6;
+    new var7;
+    var7 = contain(var1, var6);
+    new var8;
+    var8 = strlen(var6) + var7;
+    if (var7 == -1)
+    {
+        var8 = copy(var2, var3, var1);
+        copy(var4, var5, var1[var8]);
+        return 0;
+    }
+    if (var3 >= var7)
+    {
+        copy(var2, var7, var1);
+    }
+    else
+    {
+        copy(var2, var3, var1);
+    }
+    copy(var4, var5, var1[var8]);
+    return 0;
+}
+
+func_02()
+{
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "func_02"
+func_02()
+
+func_03()
+{
+    !!! Removed Phi
+    if (var2 && !is_user_connected(var2))
+    {
+        return 0;
+    }
+    new var5;
+    new var6;
+    var6 = numargs();
+    if (var2)
+    {
+        if (var6 == 3)
+        {
+
+func_04()
+{
+    if (!__unk)
+    {
+        __unk = get_user_msgid("TeamInfo");
+    }
+    new var1;
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "func_04"
+func_04()
+
+func_05()
+{
+    new var3;
+    if (!__unk)
+    {
+        __unk = get_user_msgid("SayText");
+    }
+    new var1;
+    if (var3)
+    {
+        var1 = 1;
+    }
+    else
+    {
+        var1 = 2;
+    }
+
+/ * ERROR! Unable to cast object of type 'Lysis.DSentinel' to type 'Lysis.DReturn'. * /
+ function "func_05"
+func_05()
+
+public plugin_natives()
+{
+    register_library("shop_sms");
+    register_native("ss_register_service", "native_registerService", 0);
+    register_native("ss_show_service_purchase", "native_showServicePurchase", 0);
+    register_native("ss_show_sms_info", "native_displaySmsDetails", 0);
+    register_native("ss_log", "native_addLog", 0);
+    register_native("ss_is_steam", "native_is_steam", 0);
+    return 0;
+}
+
+public plugin_precache()
+{
+    func_02("", 127);
+    func_33();
+    __unk = register_cvar("sklepsms_on", "1", 0, 0.00);
+    __unk = register_cvar("sklepsms_sklep_komenda", "/sklepsms,/shopsms", 0, 0.00);
+    __unk = register_cvar("sklepsms_przeladuj_komenda", "/przeladuj", 0, 0.00);
+    __unk = register_cvar("sklepsms_uslugi_komenda", "/uslugi", 0, 0.00);
+    __unk = register_cvar("sklepsms_info", "1", 0, 0.00);
+    __unk = register_cvar("sklepsms_url", "", 0, 0.00);
+    __unk = register_cvar("sklepsms_token", "", 0, 0.00);
+    __unk = register_cvar("sklepsms_server_ip", "", 0, 0.00);
+    __unk = register_cvar("sklepsms_ciche_komendy", "0", 0, 0.00);
+    if (file_exists(""))
+    {
+        server_cmd("exec %s", "");
+    }
+    __unk = ArrayCreate(1, 32);
+    __unk = ArrayCreate(17, 32);
+    __unk = ArrayCreate(68, 32);
+    __unk = ArrayCreate(18, 32);
+    __unk = ArrayCreate(125, 32);
+    __unk = ArrayCreate(20, 32);
+    __unk = TrieCreate();
+    __unk = TrieCreate();
+    __unk = TrieCreate();
+    __unk = TrieCreate();
+    return 0;
+}
+
+public plugin_init()
+{
+    register_plugin("Sklep SMS", "3.10.0", "SeeK");
+    register_menucmd(register_menuid("smsDetails", 0), 513, "smsDetails_handler");
+    register_concmd("Podaj_Kod_Zwrotny", "onSmsCodeEntered", -1, "", -1);
+    register_concmd("ssnick_Podaj_Haslo", "onNickPasswordEntered", -1, "", -1);
+    register_concmd("ssip_Podaj_Haslo", "onIpPasswordEntered", -1, "", -1);
+    register_concmd("ss_reload", "command_reloadServerConfig", -1, "", -1);
+    register_concmd("ss_reload_players_flags", "command_reloadPlayersFlags", -1, "", -1);
+    register_concmd("ss_reassign_players_flags", "command_reassignPlayersFlags", -1, "", -1);
+    register_clcmd("say", "sayHook", -1, "", -1);
+    register_clcmd("say_team", "sayHook", -1, "", -1);
+    if (__unk)
+    {
+        set_task(137.00, "displayCommercial", 0, 340296, 0, "b", 0);
+    }
+    __unk = random_num(1, 99999999);
+    __unk = CreateMultiForward("ss_client_access", 0, 0, 0);
+    __unk = nvault_open("shopsms");
+    if (__unk == -1)
+    {
+        func_32("Couldn't open 'shopsms' nvault.");
+    }
+    return 0;
+}
+
+public plugin_cfg()
+{
+    if (file_exists(""))
+    {
+        server_cmd("exec %s", "");
+        server_exec();
+    }
+    else
+    {
+        func_37(0, "");
+    }
+    func_06();
+    new var1;
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "plugin_cfg"
+public plugin_cfg()
+
+public plugin_end()
+{
+    nvault_close(__unk);
+    TrieDestroy(66008);
+    TrieDestroy(66012);
+    TrieDestroy(66016);
+    TrieDestroy(69796);
+    return 0;
+}
+
+func_06()
+{
+    !!! Removed Phi
+    if (strlen("") && 67476[strlen("") - 1] == 47)
+    {
+        67476[strlen("") - 1] = 0;
+    }
+    if (!strlen("") || !strlen(""))
+    {
+        func_57();
+        return 0;
+    }
+    get_pcvar_string(__unk, "", 16383);
+    func_46("", __unk);
+    get_pcvar_string(__unk, "", 16383);
+    func_46("", __unk);
+    get_pcvar_string(__unk, "", 16383);
+    func_46("", __unk);
+    __unk = get_pcvar_num(__unk);
+    return 0;
+}
+
+public client_authorized()
+{
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "client_authorized"
+public client_authorized()
+
+public client_putinserver()
+{
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "client_putinserver"
+public client_putinserver()
+
+public amxbans_sql_initialized()
+{
+    func_15();
+    return 0;
+}
+
+public client_admin()
+{
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "client_admin"
+public client_admin()
+
+public amxx_admin_access()
+{
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "amxx_admin_access"
+public amxx_admin_access()
+
+public sayHook()
+{
+    new var2;
+    new var3;
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "sayHook"
+public sayHook()
+
+func_07()
+{
+    new var1;
+    new var2 = 0;
+    var2 = curl_slist_append(var2, "Accept: application/assoc");
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "func_07"
+func_07()
+
+public onLoadServerConfigResponse()
+{
+    !!! Removed Phi
+    new var2;
+    new var3;
+    new var4;
+    if (var3)
+    {
+        func_53(var3);
+        return 0;
+    }
+    if (var4 == 404 || var4 == 400)
+    {
+        func_54();
+        return 0;
+    }
+    if (var4 == 402)
+    {
+        func_55();
+        return 0;
+    }
+    if (var4 >= 300)
+    {
+
+func_08()
+{
+    new var1;
+    new var2 = 0;
+    new var3;
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "func_08"
+func_08()
+
+func_09()
+{
+    new var1;
+    new var2 = 0;
+    new var3;
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "func_09"
+func_09()
+
+func_10()
+{
+    new var1;
+    new var2 = 0;
+    new var3;
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "func_10"
+func_10()
+
+func_11()
+{
+    new var1;
+    new var2 = 0;
+    new var3;
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "func_11"
+func_11()
+
+func_12()
+{
+    new var1;
+    new var2 = 0;
+    while (ArraySize(__unk) > var2)
+    {
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "func_12"
+func_12()
+
+public loadPlayersFlags()
+{
+    new var1;
+    new var2 = 0;
+    var2 = curl_slist_append(var2, "Accept: application/assoc");
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "loadPlayersFlags"
+public loadPlayersFlags()
+
+public onLoadPlayersFlagsResponse()
+{
+    new var1;
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "onLoadPlayersFlagsResponse"
+public onLoadPlayersFlagsResponse()
+
+func_13()
+{
+    !!! Removed Phi
+    new var1;
+    new var2;
+    var2 = TrieCreate();
+    new var3 = 0;
+    new var4;
+    var4 = strlen(var1);
+    while (var3 < var4)
+    {
+        new var5;
+        var3 = copyc("", 16383, var1[var3], 10) + 1 + var3;
+        new var6;
+
+public command_reloadServerConfig()
+{
+    func_07();
+    log_amx("Server config has been reloaded.");
+    return 0;
+}
+
+public command_reloadPlayersFlags()
+{
+    loadPlayersFlags();
+    log_amx("Players flags have been reloaded.");
+    return 0;
+}
+
+public command_reassignPlayersFlags()
+{
+    __unk = get_systime(0);
+    func_15();
+    log_amx("Players flags have been reassigned.");
+    return 0;
+}
+
+func_14()
+{
+    new var1;
+    if (get_systime(0) < __unk + 10)
+    {
+        func_03(var1, "", 343848, "SKLEP-SMS");
+        return 0;
+    }
+    __unk = get_systime(0);
+    func_15();
+    func_03(var1, "", 344132, "SKLEP-SMS");
+    return 0;
+}
+
+func_15()
+{
+    func_16();
+    new var1 = 1;
+    while (get_maxplayers() >= var1)
+    {
+        if (is_user_connected(var1))
+        {
+            func_17(var1);
+            var1++;
+        }
+        var1++;
+    }
+    return 0;
+}
+
+func_16()
+{
+    !!! Removed Phi
+    if (!__unk)
+    {
+        return 0;
+    }
+    new var3 = 0;
+    new var4 = 0;
+    var3 = ArrayCreate(68, 32);
+    var4 = ArrayCreate(68, 32);
+    new var5 = 0;
+    while (ArraySize(__unk) > var5)
+    {
+        new var6;
+
+func_17()
+{
+    !!! Removed Phi
+    new var2;
+    if (!__unk)
+    {
+        return 0;
+    }
+    new var3 = 0;
+    while (ArraySize(__unk) > var3)
+    {
+        new var4;
+
+
+func_19()
+{
+    !!! Removed Phi
+    new var1 = 0;
+    new var2 = 16383;
+    var1 = formatex(372[var1], var2 - var1, "pf.c:%d\n", ArraySize(__unk)) + var1;
+    new var3 = 0;
+    while (ArraySize(__unk) > var3)
+    {
+        new var4;
+        new var5;
+        new var6 = 0;
+
+func_20()
+{
+    nvault_get(__unk, "player_flags", "", 16383);
+    if (strlen(""))
+    {
+        new var1;
+        var1 = func_13("");
+        func_11(var1);
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "func_20"
+func_20()
+
+func_21()
+{
+    new var1;
+    if (!is_user_connected(var1))
+    {
+        return 0;
+    }
+    if (!get_pcvar_num(__unk))
+    {
+        func_03(var1, "", 344924, "SKLEP-SMS");
+        return 0;
+    }
+    if (__unk)
+    {
+        func_03(var1, "", 345120, "SKLEP-SMS");
+    }
+    if (!ArraySize(__unk))
+    {
+        func_03(var1, "", 345456, "SKLEP-SMS");
+        return 0;
+    }
+    if (!__unk)
+    {
+        func_03(var1, "", 345664, "SKLEP-SMS");
+        return 0;
+    }
+    new var2 = 0;
+    if (__unk)
+    {
+        var2 = menu_create("\rSklep SMS\d napedzany przez\w sklep-sms.pl\n\yWybierz usluge:", "shopMenu_handler", 0);
+    }
+    else
+    {
+        var2 = menu_create("\rSklep SMS\n\yWybierz usluge:", "shopMenu_handler", 0);
+    }
+    new var3;
+    var3 = menu_makecallback("shopMenu_callback");
+    new var4;
+    new var5;
+    new var6 = 0;
+    while (ArraySize(__unk) > var6)
+    {
+        new var7;
+        var7 = var6 + 1;
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "func_21"
+func_21()
+
+public shopMenu_callback()
+{
+    new var2;
+    new var3 = Heap_4;
+    var3[0] = 347272;
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "shopMenu_callback"
+public shopMenu_callback()
+
+public shopMenu_handler()
+{
+    !!! Removed Phi
+    if (!is_user_connected(var2) || var4 == -3)
+    {
+        menu_destroy(var3);
+        return 0;
+    }
+    new var5;
+    new var6 = Heap_4;
+    var6[0] = 347272;
+
+func_22()
+{
+    new var1;
+    new var2;
+    if (!is_user_connected(var1))
+    {
+        return 0;
+    }
+    new var3;
+    new var4;
+    new var5;
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "func_22"
+func_22()
+
+public pricingMenu_handler()
+{
+    !!! Removed Phi
+    if (!is_user_connected(var2) || var4 == -3)
+    {
+        menu_destroy(var3);
+        return 0;
+    }
+    new var5;
+    new var6 = Heap_4;
+    var6[0] = 347272;
+
+func_23()
+{
+    !!! Removed Phi
+    new var1;
+    new var2;
+
+public serviceTypeMenu_callback()
+{
+    !!! Removed Phi
+    new var5;
+    new var6;
+
+public serviceTypeMenu_handler()
+{
+    new var1;
+    remove_task(var1 + 8000, 0);
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "serviceTypeMenu_handler"
+public serviceTypeMenu_handler()
+
+public onNickPasswordEntered()
+{
+    new var1;
+    new var2;
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "onNickPasswordEntered"
+public onNickPasswordEntered()
+
+public onIpPasswordEntered()
+{
+    new var1;
+    new var2;
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "onIpPasswordEntered"
+public onIpPasswordEntered()
+
+func_24()
+{
+    new var1;
+    new var2;
+    if (30 < strlen(var2))
+    {
+        client_print(var1, 4, "Podane haslo jest za dlugie. Maksymalna ilosc znakow wynosi 30.");
+        return 0;
+    }
+    if (!strlen(var2))
+    {
+        client_print(var1, 4, "Haslo nie zostalo wprowadzone. Wprowadz je.");
+        return 0;
+    }
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "func_24"
+func_24()
+
+func_25()
+{
+    new var1;
+    new var2;
+    new var3;
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "func_25"
+func_25()
+
+func_26()
+{
+    new var1;
+    var1 = menu_create("Wybierz metode platnosci", "paymentMethodMenu_handler", 0);
+    new var2;
+    var2 = menu_makecallback("paymentMethodMenu_callback");
+    menu_additem(var1, "SMS", "", 0, var2);
+    menu_additem(var1, "Portfel", "", 0, var2);
+    new var3;
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "func_26"
+func_26()
+
+public paymentMethodMenu_callback()
+{
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "paymentMethodMenu_callback"
+public paymentMethodMenu_callback()
+
+public paymentMethodMenu_handler()
+{
+    new var1;
+    remove_task(var1 + 8000, 0);
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "paymentMethodMenu_handler"
+public paymentMethodMenu_handler()
+
+func_27()
+{
+    new var1;
+    if (!is_user_connected(var1))
+    {
+        return 0;
+    }
+    new var2;
+    new var3;
+    new var4;
+    new var5;
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "func_27"
+func_27()
+
+public keepDisplayingSmsDetails()
+{
+    new var1;
+    new var2;
+    var2 += -2000;
+    if (!is_user_connected(var2))
+    {
+        return 0;
+    }
+    show_menu(var2, 513, var1, 1, "smsDetails");
+    set_task(0.90, "keepDisplayingSmsDetails", var2 + 2000, var1, strlen(var1), "", 0);
+    return 0;
+}
+
+public smsDetails_handler()
+{
+    new var1;
+    new var2;
+    if (task_exists(var1 + 2000, 0))
+    {
+        remove_task(var1 + 2000, 0);
+    }
+    if (!is_user_connected(var1))
+    {
+        return 0;
+    }
+    if (var2)
+    {
+        if (var2 == 9)
+        {
+            func_03(var1, "", 351136, "SKLEP-SMS");
+        }
+    }
+    else
+    {
+        client_cmd(var1, "messagemode Podaj_Kod_Zwrotny");
+    }
+    return 0;
+}
+
+public onSmsCodeEntered()
+{
+    !!! Removed Phi
+    new var2;
+    if (!is_user_connected(var2))
+    {
+        return 0;
+    }
+    new var3;
+
+func_28()
+{
+    new var1;
+    new var2;
+    func_03(var1, "", 352096, "SKLEP-SMS");
+    if (!func_43())
+    {
+        func_03(var1, "", 352288, "SKLEP-SMS");
+        return 0;
+    }
+    new var3;
+    new var4;
+    new var5 = 0;
+    new var6;
+    new var7;
+    new var8;
+    new var9;
+    new var10;
+    new var11;
+    new var12;
+    new var13;
+    new var14;
+    new var15;
+    new var16;
+    new var17;
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "func_28"
+func_28()
+
+public onPurchaseServiceResponse()
+{
+    new var1;
+    new var2;
+    new var3;
+    new var4;
+    if (!is_user_connected(var4))
+    {
+        return 0;
+    }
+    if (var2)
+    {
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "onPurchaseServiceResponse"
+public onPurchaseServiceResponse()
+
+func_29()
+{
+    !!! Removed Phi
+    new var1;
+    new var2 = 0;
+    new var3 = 0;
+    new var4;
+    new var5;
+
+func_30()
+{
+    new var1;
+    if (!is_user_connected(var1))
+    {
+        return 0;
+    }
+    new var2;
+    new var3;
+    new var4;
+    new var5;
+    new var6;
+    new var7;
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "func_30"
+func_30()
+
+public onShowPlayerServicesResponse()
+{
+    new var1;
+    new var2;
+    new var3;
+    new var4;
+    if (!is_user_connected(var4))
+    {
+        return 0;
+    }
+    if (var2)
+    {
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "onShowPlayerServicesResponse"
+public onShowPlayerServicesResponse()
+
+public showPlayerServices_handler()
+{
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "showPlayerServices_handler"
+public showPlayerServices_handler()
+
+func_31()
+{
+    new var1;
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "func_31"
+func_31()
+
+func_32()
+{
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "func_32"
+func_32()
+
+public displayCommercial()
+{
+    !!! Removed Phi
+    if (1 < get_playersnum(0))
+    {
+        new var1;
+
+func_33()
+{
+    format("", 127, "%s/%s", "", "sklep_sms.cfg");
+    if (!file_exists(""))
+    {
+        new var1;
+        new var2 = 0;
+        new var3 = 1023;
+        var2 = formatex(var1[var2], var3 - var2, "// ----------------------------------\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "// SKLEP SMS: - Plik Konfiguracyjny\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "// ----------------------------------\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "// Wlacza / Wylacza sklep\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "// 1 - wlaczony\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "// 0 - wylaczony\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "sklepsms_on \"1\"\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "// Lista komend oddzielonych przecinkiem, ktore mozna wpisac na chacie, w celu wyswietlenia menu sklepie\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "sklepsms_sklep_komenda \"/sklepsms,/shopsms\"\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "// Lista komend oddzielonych przecinkiem, ktore mozna wpisac na chacie, w celu przeladowania flag wykupionych w sklepie\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "sklepsms_przeladuj_komenda \"/przeladuj\"\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "// Lista komend oddzielonych przecinkiem, ktore mozna wpisac na chacie, aby zobaczyc swoje aktywne uslugi\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "sklepsms_uslugi_komenda \"/uslugi\"\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "// Czy po uzyciu powyzszych komend wyswietla sie one w chacie\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "sklepsms_ciche_komendy \"0\"\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "// Wyswietlac informacje o sklepie na chacie?\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "sklepsms_info \"1\"\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "// #####################\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "// ###  Dane Sklepu  ###\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "// #####################\n\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "// Adres URL sklepu\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "sklepsms_url \"\"\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "// Token serwera\n") + var2;
+        var2 = formatex(var1[var2], var3 - var2, "sklepsms_token \"\"\n") + var2;
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "func_33"
+func_33()
+
+func_34()
+{
+    new var1 = 0;
+    new var2;
+    new var3;
+    new var4;
+    get_cvar_string("hostname", "", 128);
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "func_34"
+func_34()
+
+public onValidateLicenseResponse()
+{
+    new var1;
+    new var2;
+    new var3;
+    __unk = 0;
+    if (__unk)
+    {
+        func_52("");
+        return 0;
+    }
+    __unk = 1;
+    if (var2)
+    {
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "onValidateLicenseResponse"
+public onValidateLicenseResponse()
+
+public keepDisplayingMenu()
+{
+    new var1;
+    new var2;
+    var2 = var1;
+    if (!is_user_connected(var2))
+    {
+
+/ * ERROR! unknown load * /
+ function "keepDisplayingMenu"
+public keepDisplayingMenu()
+
+func_35()
+{
+    if (!ArraySize(__unk))
+    {
+        log_amx("Nie zaladowano zadnych uslug graczy.");
+    }
+    else
+    {
+        log_amx("Zaladowano %d uslug graczy.", ArraySize(__unk));
+    }
+    return 0;
+}
+
+func_36()
+{
+    if (!ArraySize(__unk))
+    {
+        log_amx("Nie zaladowano zadnych uslug do zakupienia.");
+    }
+    else
+    {
+        log_amx("Zaladowano %d uslug do zakupienia.", ArraySize(__unk));
+    }
+    return 0;
+}
+
+func_37()
+{
+    new var1;
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "func_37"
+func_37()
+
+func_38()
+{
+    new var1;
+    new var2 = 0;
+    while (ArraySize(__unk) > var2)
+    {
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "func_38"
+func_38()
+
+func_39()
+{
+    new var1;
+    new var2 = 0;
+    while (ArraySize(__unk) > var2)
+    {
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "func_39"
+func_39()
+
+func_40()
+{
+    new var1;
+    new var2 = 0;
+    while (ArraySize(__unk) > var2)
+    {
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "func_40"
+func_40()
+
+func_41()
+{
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "func_41"
+func_41()
+
+func_42()
+{
+    new var1;
+    new var2;
+    new var3;
+    new var4;
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "func_42"
+func_42()
+
+
+func_44()
+{
+    new var1;
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "func_44"
+func_44()
+
+func_45()
+{
+    get_pcvar_string(__unk, "", 16383);
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "func_45"
+func_45()
+
+func_46()
+{
+    new var1;
+    new var2;
+    TrieClear(var2);
+    new var3 = 0;
+    new var4;
+    var4 = strlen(var1);
+    while (var3 < var4)
+    {
+        new var5;
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "func_46"
+func_46()
+
+func_47()
+{
+    func_32("Error 10 - Wystapil blad podczas odczytywania odpowiedzi od serwera walidujacego licencje. Zobacz logi.");
+    __unk = 1;
+    return 0;
+}
+
+func_48()
+{
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "func_48"
+func_48()
+
+func_49()
+{
+    func_32("Error 12 - Walidacja wyslanych danych do serwera walidacyjnego nie powiodla sie.");
+    __unk = 1;
+    return 0;
+}
+
+func_50()
+{
+    func_32("Error 13 - Bledny token licencji.");
+    __unk = 1;
+    return 0;
+}
+
+func_51()
+{
+    func_58("Error 14 - Licencja nie wspiera tego typu serwera lub przekroczono limit stron WWW.");
+    return 0;
+}
+
+func_52()
+{
+    new var1;
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "func_52"
+func_52()
+
+func_53()
+{
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "func_53"
+func_53()
+
+func_54()
+{
+    func_58("Error 21 - Bledny token serwera.");
+    return 0;
+}
+
+func_55()
+{
+    func_58("Error 22 - Obecna wersja pluginu nie jest juz wspierana. Dokonaj aktualizacji pluginu.");
+    return 0;
+}
+
+func_56()
+{
+    func_32("Error 23 - Wystapil blad podczas ladowania konfiguracji serwera.");
+    __unk = 1;
+    return 0;
+}
+
+func_57()
+{
+    func_58("Error 24 - Nie podano danych sklepu: URL lub token.");
+    return 0;
+}
+
+func_58()
+{
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "func_58"
+func_58()
+
+public task_displayLoading()
+{
+    new var1;
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "task_displayLoading"
+public task_displayLoading()
+
+func_59()
+{
+    new var1;
+    new var2 = 0;
+    new var3 = 0;
+    new var4;
+    var2 = curl_easy_init();
+    if (!var2)
+    {
+        func_32("The CURL handle couldn't be initialized.");
+        return 0;
+    }
+    new var5;
+    __unk += 1;
+    var5 = __unk;
+    if (337164[var5])
+    {
+        func_32("Requests pool is full. Request has not been execeuted.");
+        return 0;
+    }
+    setc(74988[var5], 16384, 0);
+    337164[var5] = 1;
+    var4 = var5;
+
+/ * ERROR! unknown load * /
+ function "func_59"
+func_59()
+
+public @responseWrite()
+{
+    new var1;
+    new var2;
+    new var3;
+    new var4;
+    var4 = strlen(74988[var3]);
+    new var5;
+    var5 = 16384 - var4;
+    if (var5 < var2)
+    {
+        func_32("Response too big error | %s", var1);
+    }
+    formatex(74988[var3][var4], min(var2, var5), var1);
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "@responseWrite"
+public @responseWrite()
+
+public @requestComplete()
+{
+    new var1;
+    new var2;
+    new var3;
+    if (var2)
+    {
+        new var4;
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "@requestComplete"
+public @requestComplete()
+
+func_60()
+{
+    !!! Removed Phi
+    if (!strlen(var2) || callfunc_begin(var2, "") == 1)
+    {
+
+public native_registerService()
+{
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "native_registerService"
+public native_registerService()
+
+public native_addLog()
+{
+    vdformat("", 16383, 1, 2);
+    log_to_file("sklep_sms.log", "%s", "");
+    return 0;
+}
+
+public native_showServicePurchase()
+{
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "native_showServicePurchase"
+public native_showServicePurchase()
+
+public native_displaySmsDetails()
+{
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "native_displaySmsDetails"
+public native_displaySmsDetails()
+
+public native_is_steam()
+{
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "native_is_steam"
+public native_is_steam()
+
+func_61()
+{
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "func_61"
+func_61()
+
+
+func_63()
+{
+    !!! Removed Phi
+    new var2;
+    if (4 > strlen(var2))
+    {
+        return 0;
+    }
+    if (var2 == 55)
+    {
+        new var3;
+
+func_64()
+{
+    new var1;
+    new var2;
+    if (var1 < 10)
+    {
+
+/ * ERROR! Unable to cast object of type 'Lysis.DTempName' to type 'Lysis.DDeclareLocal'. * /
+ function "func_64"
+func_64()
+
+func_65()
+{
+    !!! Removed Phi
+    new var2;
+    new var3;
+    setc(var2, var3, 0);
+    new var4;
+
+func_66()
+{
+    !!! Removed Phi
+    new var4;
+    new var5;
+    new var6 = 0;
+    new var7 = 0;
+    new var8 = 0;
+    while (var9 && var8 < var5)
+    {
+        if (var7 == 32)
+        {
+            var8++;
+            var4[var8] = 43;
+        }
+        else
+        {
+            if (!var10 <= 90 & 65 <= var10 && !var11 <= 122 & 97 <= var11 && !var12 <= 57 & 48 <= var12 && var7 != 45 && var7 != 46 && var7 != 95)
+            {
+                if (var5 < var8 + 3)
+                {
+                    var4[var8] = 0;
+                    return var8;
+                }
+                else
+                {
+                    if (var7 > 255 || var7 < 0)
+                    {
+                        var7 = 42;
+                    }
+                    var8++;
+                    var4[var8] = 37;
+                    var8++;
+                    var4[var8] = 375032[var7 >>> 4];
+                    var8++;
+                    var4[var8] = 375032[var7 & 15];
+                }
+                var4[var8] = 0;
+                return var8;
+            }
+            var8++;
+            var4[var8] = var7;
+        }
+        var6++;
+    }
+    var4[var8] = 0;
+    return var8;
+}
+
+func_67()
+{
+    new var1;
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "func_67"
+func_67()
+
+func_68()
+{
+    new var1;
+
+/ * ERROR! Object reference not set to an instance of an object. * /
+ function "func_68"
+func_68()
+

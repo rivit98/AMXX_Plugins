@@ -1,0 +1,3 @@
+
+		//KLUCZE
+		csgo_set_user_keys(id, csgo_get_user_keys(id) + ILOSC_KLUCZY);

@@ -1,0 +1,4 @@
+
+		//Skrzynki
+		new iSkrzynka = csgo_get_crate_by_name(NAZWA_SKRZYNKI);
+		csgo_set_user_crates(id, iSkrzynka, csgo_get_user_crates(id, iSkrzynka) + ILOSC_SKRZYNEK);

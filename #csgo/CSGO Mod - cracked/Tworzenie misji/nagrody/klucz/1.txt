@@ -1,0 +1,2 @@
+//KLUCZE
+#define ILOSC_KLUCZY 1		//Ile kluczy ma dostac jako nagrode

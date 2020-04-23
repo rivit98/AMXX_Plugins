@@ -1,0 +1,3 @@
+//Skrzynki
+#define NAZWA_SKRZYNKI "Skrzynka broni krotkich"	//Nazwa skrzynki, jaka ma dostac grac
+#define ILOSC_SKRZYNEK 2				//Ilosc otrzymanych skrzynek
