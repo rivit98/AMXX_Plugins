@@ -37,7 +37,7 @@ public client_PreThink(id)
 		static Float:Velocity[3], Float:Angle[3]
 		if(is_valid_ent(user_controll))
 		{
-			new owner = entity_get_edict(ent, EV_ENT_owner);
+			new owner = entity_get_edict(user_controll, EV_ENT_owner);
 			if(owner != id) return 0;
 			velocity_by_aim(id, 70, Velocity);
 			entity_get_vector(id, EV_VEC_v_angle, Angle);
