@@ -1,0 +1,31 @@
+<head>
+		<style type="text/css">
+			body{
+				background-color: #000000;
+				font-family:Verdana,Tahoma;
+				color: #FFFFFF;
+			}
+		</style>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+	</head>
+	<body>
+		<ul><font color="#E0A518" size="2"><b>Vip posiada :</b></font><br><br>
+		<li type="square"><font size="1">
+Sklep dla Premium i nizsze ceny w zwyklym sklepie<br>
++300$ co runde<br>
+Defuse Kit co runde<br>
+Dodatkowa kasa za zabojstwo ( 450 - HS | 250 - Normalne )<br>
+Dodatkowy exp za zabojstwo ( 40 - HS | 25 - Normalne )<br>
+Napis VIP w tabeli wynikow<br>
+Prefix [Premium] przed nickiem<br>
++300$ za podlozenie bomby<br>
++300$ za rozbrojenie bomby<br>
+Przywitanie gdy wchodzi na serwer<br>
++100$ za przezycie rundy<br>
+Cena Premium: xx.<br>
+
+Info o Super Premium pod komenda: /spremium
+		</font></li></ul>
+	
+
+</body>

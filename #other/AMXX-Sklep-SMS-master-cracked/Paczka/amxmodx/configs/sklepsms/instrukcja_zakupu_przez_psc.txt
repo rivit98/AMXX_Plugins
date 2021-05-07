@@ -1,0 +1,15 @@
+<html>
+<head>
+</head>
+<body bgcolor="#191919"><font color="#BCBCBC"><br />
+Jezeli chcesz zaplacic przez PSC, wyslij do mnie na PW wypelniony ponizej wzor:<br />
+<br />
+<b>Wzor:</b><br />
+Nick na serwerze:<br />
+Co chcesz kupic:<br /><br />
+<br />
+<b>Kontakt:</b><br />
+Skontaktuj sie z wlascicielem serwera :) 
+</font>
+</body>
+</html>

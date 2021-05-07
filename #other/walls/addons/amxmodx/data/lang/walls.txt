@@ -1,0 +1,111 @@
+[pl]
+WALLS_PREFIX = ^4[BLOKADA]^1
+WALLS_MESSAGE_MAP_OPENED = Mapa otwarta
+WALLS_MESSAGE_MAP_CLOSED = Mapa zamknieta
+WALLS_MESSAGE_TOUCH = Przepraszamy, ^3przejscie zablokowane^1 z powodu malej liczby graczy.
+WALLS_MESSAGE_TOUCH_PERM = Wejscie w to miejsce jest ^3zablokowane^1!
+
+WALLS_DEV_YES = Tak
+WALLS_DEV_NO = Nie
+
+WALLS_DEV_HIDE = \dUkryj
+WALLS_DEV_SHOW = \yPokaz
+
+WALLS_DEV_SAVE = Zapisz
+WALLS_DEV_CHANGE = Edytuj
+
+WALLS_DEV_SOLID = \wBryly:\y
+WALLS_DEV_SOLID_D = \dBryly:
+
+WALLS_DEV_FAILED_1 = * Nie znaleziono sciany *
+WALLS_DEV_FAILED_2 = * Ta sciana jest juz skopiowana *
+WALLS_DEV_FAILED_3 = * Zadna sciana nie jest skopiowana *
+WALLS_DEV_FAILED_4 = * Najpierw musisz stworzy sciane *
+WALLS_DEV_FAILED_5 = * Nie skonczyles tworzenia/edycji poprzedniej sciany *
+
+WALLS_DEV_SUCCESS_1 = * Sciana usunieta *
+WALLS_DEV_SUCCESS_2 = * Sciana skopiowana *
+WALLS_DEV_SUCCESS_3 = * Pomyslnie zapisano *
+WALLS_DEV_SUCCESS_4 = * Zapisano wlasciwosci sciany *
+WALLS_DEV_SUCCESS_5 = * Sciana jest gotowa na wprowadzenie zmian *
+WALLS_DEV_SUCCESS_6 = * Zastosowano wlasciwosc: ^"%s^" *
+
+WALLS_DEV_TITLE = Sciana z informacja
+WALLS_DEV_WALL = Sciana bez informacji
+WALLS_DEV_NULL = Przezroczysta sciana
+
+WALLS_DEV_COORD = Polozenie
+WALLS_DEV_ANGLES = Katy
+WALLS_DEV_SIZE = Rozmiar
+WALLS_DEV_MINS = Rozmiar \rMins
+WALLS_DEV_MAXS = Rozmiar \rMaxs
+WALLS_DEV_SPRITE = Rozmiar sprite'a
+
+WALLS_DEV_MENU_MAIN = \yTworzenie scian^n\dStworzone sciany: %d^n^n\r1.%s Stworz sciane^n\r2.%s Usun sciane^n\r3.%s %L sciane^n^n\r4.%s Wlasciwosci^n\r5.\w Konfiguracja^n^n\r6.%s Kopiuj^n\r7.%s Wklej^n^n\r9.%s Zapisz wszystko^n^n\r0.\w Wyjdz
+WALLS_DEV_MENU_CONFIG = \yTworzenie scian \d>>\w Konfiguracja^n^n\r1. %L %s^n\r2.%s Sciany: %L^n\r3.\w Min. graczy:\y %d^n\r4.\w Noclip:\y %L^n^n\r5.\w Zaawansowane wlasciwosci:\y %L^n^n\r0.\w Wroc
+
+WALLS_DEV_MENU_TITLE = \yTworzenie scian \d>>\w Wlasciwosci^n
+WALLS_DEV_MENU_COORD = ^nPolozenie:\y   %0.1f   %0.1f   %0.1f^n^n\r1.\w X\y++^n\r2.\w Y\y++^n\r3.\w Z\y++^n^n\r4.\w X\r--^n\r5.\w Y\r--^n\r6.\w Z\r--^n^n\r7.\w Wartosc:\y x%0.1f
+WALLS_DEV_MENU_ANGLES = ^nKaty:\y   %0.1f   %0.1f   %0.1f^n^n\r1.\w X\y++^n\r2.\w Y\y++^n\r3.\w Z\y++^n^n\r4.\w X\r--^n\r5.\w Y\r--^n\r6.\w Z\r--^n^n\r7.\w Wartosc:\y x%0.1f
+WALLS_DEV_MENU_SIZE = ^nRozmiar:   \w[\r Mins \y   %0.1f   %0.1f   %0.1f   \w]\t[\r Maxs\y   %0.1f   %0.1f   %0.1f   \w]^n^n\r1.\w X\y++^n\r2.\w Y\y++^n\r3.\w Z\y++^n^n\r4.\w X\r--^n\r5.\w Y\r--^n\r6.\w Z\r--^n^n\r7.\w Wartosc:\y x%0.1f
+WALLS_DEV_MENU_ADDON = ^n\r8.\w Akcja:\y %L^n\r9.\w Wyglad:\y %L^n^n\r0.\w Wroc
+
+WALLS_DEV_MENU_SCALE_1 = ^nRozmiar:\y   %0.3f^n^n\r1.\w %0.1f\y++^n\r2.\w %0.1f\r--^n^n\r7.\w Wartosc:\y x%0.1f
+WALLS_DEV_MENU_SCALE_2 = ^nRozmiar:\y   %0.3f^n^n\r1.\w %0.2f\y++^n\r2.\w %0.2f\r--^n^n\r7.\w Wartosc:\y x%0.2f
+WALLS_DEV_MENU_SCALE_3 = ^nRozmiar:\y   %0.3f^n^n\r1.\w %0.3f\y++^n\r2.\w %0.3f\r--^n^n\r7.\w Wartosc:\y x%0.3f
+
+[en]
+WALLS_PREFIX = ^4[BLOKADA]^1
+WALLS_MESSAGE_MAP_OPENED = Mapa otwarta
+WALLS_MESSAGE_MAP_CLOSED = Mapa zamknieta
+WALLS_MESSAGE_TOUCH = Przepraszamy, ^3przejscie zablokowane^1 z powodu malej liczby graczy.
+WALLS_MESSAGE_TOUCH_PERM = Wejscie w to miejsce jest ^3zablokowane^1!
+
+WALLS_DEV_YES = Tak
+WALLS_DEV_NO = Nie
+
+WALLS_DEV_HIDE = \dUkryj
+WALLS_DEV_SHOW = \yPokaz
+
+WALLS_DEV_SAVE = Zapisz
+WALLS_DEV_CHANGE = Edytuj
+
+WALLS_DEV_SOLID = \wBryly:\y
+WALLS_DEV_SOLID_D = \dBryly:
+
+WALLS_DEV_FAILED_1 = * Nie znaleziono sciany *
+WALLS_DEV_FAILED_2 = * Ta sciana jest juz skopiowana *
+WALLS_DEV_FAILED_3 = * Zadna sciana nie jest skopiowana *
+WALLS_DEV_FAILED_4 = * Najpierw musisz stworzy sciane *
+WALLS_DEV_FAILED_5 = * Nie skonczyles tworzenia/edycji poprzedniej sciany *
+
+WALLS_DEV_SUCCESS_1 = * Sciana usunieta *
+WALLS_DEV_SUCCESS_2 = * Sciana skopiowana *
+WALLS_DEV_SUCCESS_3 = * Pomyslnie zapisano *
+WALLS_DEV_SUCCESS_4 = * Zapisano wlasciwosci sciany *
+WALLS_DEV_SUCCESS_5 = * Sciana jest gotowa na wprowadzenie zmian *
+WALLS_DEV_SUCCESS_6 = * Zastosowano wlasciwosc: ^"%s^" *
+
+WALLS_DEV_TITLE = Sciana z informacja
+WALLS_DEV_WALL = Sciana bez informacji
+WALLS_DEV_NULL = Przezroczysta sciana
+
+WALLS_DEV_COORD = Polozenie
+WALLS_DEV_ANGLES = Katy
+WALLS_DEV_SIZE = Rozmiar
+WALLS_DEV_MINS = Rozmiar \rMins
+WALLS_DEV_MAXS = Rozmiar \rMaxs
+WALLS_DEV_SPRITE = Rozmiar sprite'a
+
+WALLS_DEV_MENU_MAIN = \yTworzenie scian^n\dStworzone sciany: %d^n^n\r1.%s Stworz sciane^n\r2.%s Usun sciane^n\r3.%s %L sciane^n^n\r4.%s Wlasciwosci^n\r5.\w Konfiguracja^n^n\r6.%s Kopiuj^n\r7.%s Wklej^n^n\r9.%s Zapisz wszystko^n^n\r0.\w Wyjdz
+WALLS_DEV_MENU_CONFIG = \yTworzenie scian \d>>\w Konfiguracja^n^n\r1. %L %s^n\r2.%s Sciany: %L^n\r3.\w Min. graczy:\y %d^n\r4.\w Noclip:\y %L^n^n\r5.\w Zaawansowane wlasciwosci:\y %L^n^n\r0.\w Wroc
+
+WALLS_DEV_MENU_TITLE = \yTworzenie scian \d>>\w Wlasciwosci^n
+WALLS_DEV_MENU_COORD = ^nPolozenie:\y   %0.1f   %0.1f   %0.1f^n^n\r1.\w X\y++^n\r2.\w Y\y++^n\r3.\w Z\y++^n^n\r4.\w X\r--^n\r5.\w Y\r--^n\r6.\w Z\r--^n^n\r7.\w Wartosc:\y x%0.1f
+WALLS_DEV_MENU_ANGLES = ^nKaty:\y   %0.1f   %0.1f   %0.1f^n^n\r1.\w X\y++^n\r2.\w Y\y++^n\r3.\w Z\y++^n^n\r4.\w X\r--^n\r5.\w Y\r--^n\r6.\w Z\r--^n^n\r7.\w Wartosc:\y x%0.1f
+WALLS_DEV_MENU_SIZE = ^nRozmiar:   \w[\r Mins \y   %0.1f   %0.1f   %0.1f   \w]\t[\r Maxs\y   %0.1f   %0.1f   %0.1f   \w]^n^n\r1.\w X\y++^n\r2.\w Y\y++^n\r3.\w Z\y++^n^n\r4.\w X\r--^n\r5.\w Y\r--^n\r6.\w Z\r--^n^n\r7.\w Wartosc:\y x%0.1f
+WALLS_DEV_MENU_ADDON = ^n\r8.\w Akcja:\y %L^n\r9.\w Wyglad:\y %L^n^n\r0.\w Wroc
+
+WALLS_DEV_MENU_SCALE_1 = ^nRozmiar:\y   %0.3f^n^n\r1.\w %0.1f\y++^n\r2.\w %0.1f\r--^n^n\r7.\w Wartosc:\y x%0.1f
+WALLS_DEV_MENU_SCALE_2 = ^nRozmiar:\y   %0.3f^n^n\r1.\w %0.2f\y++^n\r2.\w %0.2f\r--^n^n\r7.\w Wartosc:\y x%0.2f
+WALLS_DEV_MENU_SCALE_3 = ^nRozmiar:\y   %0.3f^n^n\r1.\w %0.3f\y++^n\r2.\w %0.3f\r--^n^n\r7.\w Wartosc:\y x%0.3f

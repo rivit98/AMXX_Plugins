@@ -1,0 +1,20 @@
+<center><b><body bgcolor="black" text="red"><font size="5"><font face="Verdana">
+Pomoc CoD<br>
+/klasa - wybierz klase<br>
+/klasy - opis wszystkich klas<br>
+/perk - opis perku<br>
+/drop, /wyrzuc, /sell - sprzedaj perk<br>
+/reset - resetuje statystyki (rozdajesz od nowa)<br>
+/statystyki, /staty - pokazuje twoje staty<br>
+/hud - wlacza/wylacza hud<br>
+/modele - wlacza/wylacza nowe modele broni<br>
+/shop, /sklep, /s - kupowanie rzeczy<br>
+/misje, /quest - pokazuje menu misji<br>
+/aukcje - otwiera menu aukcji<br>
+/premium - pokazuje info o Premium<br>
+/spremium - pokazuje info o Super Premium<br>
+/vipy, /vips - pokazuje statusy graczy<br>
+Klawisz C - uzycie perku<br>
+Klawisz E - uzycie umiejetnosci klasy<br>
+</centern></body></font></b>
+
